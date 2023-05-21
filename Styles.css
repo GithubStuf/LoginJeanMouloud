@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.box1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 h1{
+    display: flex;
+    position: absolute;
+    margin-top: 10%;
+}
+body{
+    background-color: #2d3548;
+    color: #fff;
+    font-family: sans-serif;
+}
+.box2{
+    display: flex;
+    width: 80%;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    gap: 20px;
+}
+.card-bg{
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    position: relative;
+}
+img{
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    position: absolute;
+    display: block;
+}
+.content{
+    position: absolute;
+    left: 0;
+    padding: 25px;
+}
+.card-bg ion-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.card-bg ion-icon:hover{
+    color: rgb(18, 25, 66);
+}
+.card-categories{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.card-heading{
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.box2:hover > .card:not(:hover) .card-bg{
+    filter: brightness(0.5) blur(7px);
+}
+.box2 .pop-up{
+    position: fixed;
+    left: 0;top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.box2 .pop-up span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+.box2 .pop-up img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+}
+h1{
+    position: absolute;
+}
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 5vh;
+    background-color: rgba(57, 245, 245, 0.486);
+}
+header ion-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    margin-right: 2%;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 44px;
+    cursor: pointer;
+}
